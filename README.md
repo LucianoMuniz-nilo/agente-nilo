@@ -1,2 +1,3 @@
-# agente-nilo
-Aplicação Skip com integração à IA da OpenAI
+# Project built by Curling AI
+
+This project was built by curling AI from ground up
