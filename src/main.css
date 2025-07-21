@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%; /* #F6F8FA */
+    --foreground: 202 45% 22%; /* #1C3F52 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 202 45% 22%; /* #1C3F52 */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 202 45% 22%;
+
+    --primary: 202 45% 22%; /* #1C3F52 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 202 48% 38%; /* #32718F */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 203 14% 65%; /* #9AA6AC - derived */
+    --muted-foreground: 204 13% 40%; /* #5A6C75 */
+
+    --accent: 202 48% 38%; /* #32718F */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%; /* #E0E0E0 */
+    --input: 210 20% 88%; /* #E0E0E0 */
+    --ring: 202 48% 38%; /* #32718F */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 20% 97%;
+    --foreground: 202 45% 22%;
+    --card: 0 0% 100%;
+    --card-foreground: 202 45% 22%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 202 45% 22%;
+    --primary: 202 45% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 202 48% 38%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 203 14% 65%;
+    --muted-foreground: 204 13% 40%;
+    --accent: 202 48% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 202 48% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-nilo-light-gray text-nilo-dark-gray font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-nilo-petroleum-blue font-bold;
+  }
+}
